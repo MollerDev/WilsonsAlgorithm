@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WilsonsAlgorithm.Models\WilsonsAlgorithm.Models.csproj" />
+  </ItemGroup>
+
 </Project>

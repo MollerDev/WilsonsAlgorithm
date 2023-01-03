@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WilsonsAlgorithm.Models
+namespace WilsonsAlgorithm.Services
 {
-    public class Coordinate
+    public class TileSetDataStructureBuilder : ITileSetDataStructureBuilder
     {
-        public int X { get; set; }
-        public int Y { get; set; }
     }
 }

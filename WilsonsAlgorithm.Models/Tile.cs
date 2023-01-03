@@ -18,5 +18,10 @@ namespace WilsonsAlgorithm.Models
 
         // Walls defined by index clockwise (0 = N, 1 = E, 2 = S, 3 = W)
         public bool[]? Walls { get; set; }
+
+        public Task SetWalls()
+        {
+
+        }
     }
 }
