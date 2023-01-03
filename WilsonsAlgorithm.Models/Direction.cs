@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WilsonsAlgorithm.Models
 {
-    internal enum Direction
+    public enum Direction
     {
         North, East, South, West
     }

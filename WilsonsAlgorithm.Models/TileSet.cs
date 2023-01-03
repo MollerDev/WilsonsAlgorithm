@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WilsonsAlgorithm.Models
 {
-    internal class TileSet
+    public class TileSet
     {
         public List<Tile> Tiles { get; private set; }
 
