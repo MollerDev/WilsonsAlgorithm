@@ -8,7 +8,7 @@ namespace WilsonsAlgorithm.Models
 {
     public class Tile
     {
-        public Coordinate? Coordinate { get; set; }
+        public Coordinate Coordinate { get; set; }
 
         // Property to determine if the tile is part of a random walk in progress
         public bool IsTemp { get; set; }

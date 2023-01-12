@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.PortableExecutable;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,6 +11,7 @@ namespace WilsonsAlgorithm.Models
     {
         public Coordinate? CurrentPosition { get; set; }
         public Coordinate? PreviousPosition { get; set; }
+        public TileSet TileSet { get; set; } = new TileSet();
 
         /// <summary>
         /// A Task which must take a Coordinate as argument
@@ -19,7 +21,7 @@ namespace WilsonsAlgorithm.Models
         /// <returns>
         /// The current position after update
         /// </returns>
-        public Task Step(Coordinate newPosition)
+        private Task Step(Coordinate newPosition)
         {
             PreviousPosition = CurrentPosition;
             CurrentPosition = newPosition;
@@ -34,7 +36,7 @@ namespace WilsonsAlgorithm.Models
         /// <returns>
         /// Task Result with a TileSet for the specific walk
         /// </returns>
-        public Task<TileSet> Walk(Tile startTile)
+        public Task Walk(Coordinate startPosition)
         {
 
         }
@@ -45,7 +47,7 @@ namespace WilsonsAlgorithm.Models
         /// <returns>
         /// Task Result with a TileSet for new path
         /// </returns>
-        public Task<TileSet> CreatePath(TileSet randomWalk)
+        public Task<TileSet> CreatePath()
         {
 
         }
